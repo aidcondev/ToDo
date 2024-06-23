@@ -1,0 +1,22 @@
+body {
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans';
+}
+
+h1 {
+    color: seagreen;
+}
+
+ul {
+    font-size: medium;
+    font-weight: bold;
+    border: 8px solid powderblue;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.toad {
+    width: 120px;
+    height: 200;
+}
