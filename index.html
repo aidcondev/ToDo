@@ -7,10 +7,18 @@
   </head>
   <body>
     <h1>My ToDo List</h1>
-    <img class="toad" src="Bluetoad.png" alt="Toad" />
-    <input type="text" id="new-task" placeholder="Add a new task" />
+    <!-- <img class="toad" src="Bluetoad.png" alt="Toad" /> -->
+    <input
+      type="text"
+      id="new-task"
+      placeholder="Add a new task"
+      onkeydown="handleKeyDown(event)"
+    />
     <button onclick="addTask()">Add</button>
-    <ul id="task-list"></ul>
+    <button onclick="removeTask()">Remove</button>
+    <div class="task-container">
+      <ul id="task-list"></ul>
+    </div>
 
     <script src="script.js"></script>
   </body>

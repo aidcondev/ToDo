@@ -1,10 +1,12 @@
 body {
     background-color: blanchedalmond;
     font-family: 'Lucida Sans';
+    text-align: center;
 }
 
 h1 {
     color: seagreen;
+    text-align: center;
 }
 
 ul {
@@ -12,8 +14,18 @@ ul {
     font-weight: bold;
     border: 8px solid powderblue;
     border-radius: 10px;
-    width: 300px;
-    height: 100px;
+    width: 50%;
+    height: 50vh;
+}
+
+ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+div.task-container {
+    display: flex;
+    justify-content: center;
 }
 
 .toad {

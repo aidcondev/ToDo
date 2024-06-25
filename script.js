@@ -23,15 +23,26 @@ function addTask () {
         taskInput.value = "";
     }
 }
+function removeTask () {
+    tasks.pop();
+    renderTaskList();
+}
 
+function handleKeyDown(event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+}
 
 function renderTaskList() {
     let taskList = document.getElementById("task-list");
+    console.log(taskList);
     taskList.innerHTML = "";
     for (let i = 0; i < tasks.length; i++) {
         let listItem = document.createElement("li");
         console.log(listItem);
         listItem.textContent = tasks[i];
         taskList.appendChild(listItem);
+
     }
 }
